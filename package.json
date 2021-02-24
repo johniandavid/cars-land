@@ -1,0 +1,24 @@
+{
+  "name": "cars-land",
+  "version": "1.0.0",
+  "description": "ecommerce website that sells used cars for an affordable price",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johniandavid/cars-land.git"
+  },
+  "author": "John Ian David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johniandavid/cars-land/issues"
+  },
+  "homepage": "https://github.com/johniandavid/cars-land#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1"
+  }
+}
