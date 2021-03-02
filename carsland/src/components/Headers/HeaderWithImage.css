@@ -1,0 +1,19 @@
+
+.cover {
+    background: url('public/img/antoine-barres.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hoverButtonStyle:hover {
+    color: white;
+}
+
+.moveSectionDownButton {
+    position: absolute;
+    bottom: -150%;
+    right: 49%;
+    color: gray;
+}
