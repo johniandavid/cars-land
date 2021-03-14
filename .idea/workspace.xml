@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="def6a6ed-9675-4be9-aff2-35fd391d518b" name="Default Changelist" comment="Added React App with HTTP request to RESTful API">
+      <change afterPath="$PROJECT_DIR$/carsland/src/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carsland/src/assets/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carsland/src/assets/css/paper-kit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carsland/src/assets/css/paper-kit.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carsland/src/assets/css/paper-kit.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/antoine-barres.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/blurred-image-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/bruno-abatti.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/clouds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/creative-tim-white-slim2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/daniel-olahh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/daniel-olahs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/default-avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/eva.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/fabio-mangione.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/federico-beccari.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/fog-low.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/ilya-yakover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/invision-white-slim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/joshua-stannard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/login-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/new_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/nucleo-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/placeholder.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/ryan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/soroush-karimi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/public/img/uriel-soberanes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/carsland/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/src/components/Headers/HeaderWithVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/carsland/src/components/Headers/HeaderWithVideo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland/src/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/carsland/src/data/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-615294870">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="6" />
+          <entry key="gitignore" value="2" />
+          <entry key="js" value="13" />
+          <entry key="md" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="6" />
+          <entry key="JavaScript" value="13" />
+          <entry key="PLAIN_TEXT" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="104" />
+          <entry key="js" value="1047" />
+          <entry key="md" value="19" />
+          <entry key="txt" value="68" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="104" />
+          <entry key="JavaScript" value="1047" />
+          <entry key="PLAIN_TEXT" value="87" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>card-body</find>
+      <find>font-fam</find>
+      <find>card-tit</find>
+      <find>hover</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/carsland/src/components/Headers/HeaderWithVideo.css" />
+        <option value="$PROJECT_DIR$/carsland/src/components/Headers/HeaderWithImage.js" />
+        <option value="$PROJECT_DIR$/carsland/src/components/Headers/HeaderWithImage.css" />
+        <option value="$PROJECT_DIR$/server/README.md" />
+        <option value="$PROJECT_DIR$/server/index.js" />
+        <option value="$PROJECT_DIR$/carsland/src/data/data.js" />
+        <option value="$PROJECT_DIR$/carsland/src/components/Headers/HeaderWithVideo.js" />
+        <option value="$PROJECT_DIR$/carsland/src/App.js" />
+        <option value="$PROJECT_DIR$/carsland/src/assets/css/paper-kit.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/carsland/node_modules" />
+    <handled-path value="$PROJECT_DIR$/server/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cars-land" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cars-land" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cars-land" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cars-land" type="462c0819:PsiDirectoryNode" />
+              <item name="carsland" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cars-land" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cars-land" type="462c0819:PsiDirectoryNode" />
+              <item name="carsland" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cars-land" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cars-land" type="462c0819:PsiDirectoryNode" />
+              <item name="carsland" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cars-land" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cars-land" type="462c0819:PsiDirectoryNode" />
+              <item name="carsland" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Headers" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/carsland/src/assets" />
+      <recent name="$PROJECT_DIR$/carsland/public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="def6a6ed-9675-4be9-aff2-35fd391d518b" name="Default Changelist" comment="" />
+      <created>1614475411529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614475411529</updated>
+      <workItem from="1614475419011" duration="4051000" />
+      <workItem from="1614651781573" duration="6616000" />
+      <workItem from="1614740778980" duration="261000" />
+      <workItem from="1614742865116" duration="212000" />
+      <workItem from="1614743079803" duration="16000" />
+      <workItem from="1614743098191" duration="8000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added React App with HTTP request to RESTful API">
+      <created>1614661889341</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614661889341</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11164000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16349542" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.27710843" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added React App with HTTP request to RESTful API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added React App with HTTP request to RESTful API" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/carsland/src/components/Headers/HeaderWithVideo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsland/src/components/Headers/HeaderWithImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsland/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsland/src/components/Headers/HeaderWithImage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsland/src/data/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsland/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="66" column="61" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsland/src/assets/css/paper-kit.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsland/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsland/src/components/Headers/HeaderWithVideo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" selection-start-line="27" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsland/src/App.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
