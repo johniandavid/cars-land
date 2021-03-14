@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './HeaderWithImage.css'
 import { Button, Container } from "reactstrap";
 import Typist from 'react-typist';
+
+import './HeaderWithImage.css'
 import 'react-typist/dist/Typist.css';
 
 

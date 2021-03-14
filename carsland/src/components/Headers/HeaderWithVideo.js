@@ -1,13 +1,10 @@
 import React, { useEffect } from 'react';
-import './HeaderWithVideo.css'
-
-import Video from "../../assets/media/landing-page-video.mp4"
-
-// reactstrap components
 import { Button, Container } from "reactstrap";
 import Typist from "react-typist";
 
-// core components
+import Video from "../../assets/media/landing-page-video.mp4"
+
+import './HeaderWithVideo.css'
 
 function HeaderWithVideo(props) {
 

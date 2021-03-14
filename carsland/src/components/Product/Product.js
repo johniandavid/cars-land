@@ -1,5 +1,6 @@
-import {useEffect, useState} from "react";
 import {getCar} from "../../data/data";
+
+import {useEffect, useState} from "react";
 import { Container, Row, Col } from 'react-grid-system';
 
 import './Product.css';

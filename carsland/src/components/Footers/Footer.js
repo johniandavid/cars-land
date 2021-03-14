@@ -1,4 +1,3 @@
-// reactstrap components
 import { Row, Container } from "reactstrap";
 import "./Footer.css";
 
