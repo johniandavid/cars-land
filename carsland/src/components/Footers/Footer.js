@@ -1,46 +1,35 @@
-
-import React, { useState, useEffect } from 'react';
-
 // reactstrap components
 import { Row, Container } from "reactstrap";
+import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer footer-black footer-white">
+    <footer className="footer fixed-bottom footer-black footer-white">
       <Container>
         <Row>
           <nav className="footer-nav">
             <ul>
               <li>
-                <a
-                  href="https://www.creative-tim.com?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Creative Tim
+                <a>
                 </a>
+                Privacy & Legal
               </li>
               <li>
-                <a
-                  href="http://blog.creative-tim.com/?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Blog
-                </a>
+               <a>
+               </a>
+                Contact
               </li>
               <li>
-                <a
-                  href="https://www.creative-tim.com/license?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Licenses
+                <a>
                 </a>
+                Careers
               </li>
             </ul>
           </nav>
           <div className="credits ml-auto">
             <span className="copyright">
-              © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Creative Tim
+              © {new Date().getFullYear()}
+              <i className="fa fa-heart heart" /> Cars | Land
             </span>
           </div>
         </Row>

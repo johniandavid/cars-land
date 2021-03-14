@@ -8,11 +8,13 @@ var cors = require('cors');
 app.use(express.json())
 app.use(cors());
 
+const API_KEY = "VK2GxhCZ9KeP1viVpHcG"
+
 //ROUTES
 
 //get all cars
 
-app.get("/cars", async (req,res) => {
+app.get(`/${API_KEY}/v1/cars`, async (req,res) => {
 
     try{
         const allCars = await pool.query('SELECT car.carid, modelCar.year, modelCar.make, modelCar.model, modelCar.color, modelCar.image, car.price, car.mileage FROM modelCar, car WHERE modelCar.modelid = car.modelid;')
@@ -26,7 +28,7 @@ app.get("/cars", async (req,res) => {
 
 //get all car models
 
-app.get("/models", async (req,res) => {
+app.get(`/${API_KEY}/v1/models`, async (req,res) => {
     try{
 
         const allCarModels = await pool.query("SELECT * FROM modelCar");
@@ -41,7 +43,7 @@ app.get("/models", async (req,res) => {
 
 //get a car
 
-app.get("/cars/:carid", async (req,res) => {
+app.get(`/${API_KEY}/v1/cars/:carid`, async (req,res) => {
 
     try{
         const params = req.params;
@@ -57,11 +59,9 @@ app.get("/cars/:carid", async (req,res) => {
 });
 
 
-
-
 //create a car
 
-app.post("/cars", async (req,res) => {
+app.post(`/${API_KEY}/v1/cars`, async (req,res) => {
    try{
        const { carid, modelid, price, mileage } = req.body;
 
@@ -78,7 +78,7 @@ app.post("/cars", async (req,res) => {
 
 //create a car model
 
-app.post("/models", async (req,res) => {
+app.post(`/${API_KEY}/v1/models`, async (req,res) => {
 
     try{
         const { modelid, year, make, model, color, image, image1, image2, image3, feature, specification } = req.body;
@@ -96,7 +96,7 @@ app.post("/models", async (req,res) => {
 
 //update a car
 
-app.put("/cars/:carid/:column", async (req,res) => {
+app.put(`/${API_KEY}/v1/cars/:carid/:column`, async (req,res) => {
 
     try{
         const params = req.params;
@@ -120,7 +120,7 @@ app.put("/cars/:carid/:column", async (req,res) => {
 
 //update a car model
 
-app.put("/models/:modelid/:column", async (req,res) => {
+app.put(`/${API_KEY}/v1/models/:modelid/:column`, async (req,res) => {
 
     try{
         const params = req.params;
@@ -142,7 +142,7 @@ app.put("/models/:modelid/:column", async (req,res) => {
 
 //delete a car
 
-app.delete("/cars/:carid", async (req,res) => {
+app.delete(`/${API_KEY}/v1/cars/:carid`, async (req,res) => {
 
     try{
         const params = req.params;
@@ -160,7 +160,7 @@ app.delete("/cars/:carid", async (req,res) => {
 
 //delete a car model
 
-app.delete("/models/:modelid", async (req,res) => {
+app.delete(`/${API_KEY}/v1/models/:modelid`, async (req,res) => {
 
     try{
 
