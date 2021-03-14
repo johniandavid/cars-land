@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 // nodejs library that concatenates strings
 import classnames from "classnames";
 
-// reactstrap components
+// reactstrap Components
 import {
   Collapse,
   NavbarBrand,
@@ -13,7 +13,7 @@ import {
   Container,
 } from "reactstrap";
 
-function ProductNavbar() {
+function HomeNavbar() {
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
   const toggleNavbarCollapse = () => {
@@ -23,7 +23,7 @@ function ProductNavbar() {
 
   return (
     <Navbar
-      className="fixed-top navbar"
+      className="fixed-top navbar-transparent"
       color-on-scroll="300"
       expand="lg"
     >
@@ -31,7 +31,7 @@ function ProductNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="/"
+            to="/"
             target="_blank"
             title="Cars Land"
           >
@@ -86,4 +86,4 @@ function ProductNavbar() {
   );
 }
 
-export default ProductNavbar;
+export default HomeNavbar;

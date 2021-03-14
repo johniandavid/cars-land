@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import Slider from 'react-slick';
 import {Card, CardImg, CardBody, CardTitle } from 'reactstrap';
-import {getAllCars} from "../../data/data";
+import {getAllCars} from "../../Data/data";
 
 
 function ProductSlide() {

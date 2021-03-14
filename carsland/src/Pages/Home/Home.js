@@ -5,10 +5,10 @@ import './Home.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { Container, Row, Col } from 'react-grid-system';
 
-import HomeNavbar from '../../components/Navbars/HomeNavbar';
-import HeaderWithVideo from "../../components/Headers/HeaderWithVideo";
-import Footer from "../../components/Footers/Footer";
-import ProductSlide from "../../components/ProductSlide/ProductSlide";
+import HomeNavbar from '../../Components/Navbars/HomeNavbar';
+import HeaderWithVideo from "../../Components/Headers/HeaderWithVideo";
+import Footer from "../../Components/Footers/Footer";
+import ProductSlide from "../../Components/ProductSlide/ProductSlide";
 
 
 function Home() {

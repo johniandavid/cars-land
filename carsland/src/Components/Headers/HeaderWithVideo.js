@@ -3,11 +3,11 @@ import './HeaderWithVideo.css'
 
 import Video from "../../assets/media/landing-page-video.mp4"
 
-// reactstrap components
+// reactstrap Components
 import { Button, Container } from "reactstrap";
 import Typist from "react-typist";
 
-// core components
+// core Components
 
 function HeaderWithVideo(props) {
 
