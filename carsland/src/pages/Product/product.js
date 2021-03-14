@@ -18,7 +18,6 @@ function ProductPage() {
 
     let {id} = useParams();
 
-
     return (
         <div className="product-page">
             <ProductNavbar/>

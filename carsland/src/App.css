@@ -1,10 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-/* SECTIONS */
-
-.about-us {
-
-}
-
-.cars {
-
+html {
+    font-family: "Montserrat";
 }

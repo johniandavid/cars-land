@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 // nodejs library that concatenates strings
 import classnames from "classnames";
 
@@ -14,7 +14,6 @@ import {
 } from "reactstrap";
 
 function HomeNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
   const toggleNavbarCollapse = () => {
@@ -22,31 +21,9 @@ function HomeNavbar() {
     document.documentElement.classList.toggle("nav-open");
   };
 
-  useEffect(() => {
-    const updateNavbarColor = () => {
-      if (
-        document.documentElement.scrollTop > 299 ||
-        document.body.scrollTop > 299
-      ) {
-        setNavbarColor("");
-      } else if (
-        document.documentElement.scrollTop < 300 ||
-        document.body.scrollTop < 300
-      ) {
-        setNavbarColor("navbar-transparent");
-      }
-    };
-
-    window.addEventListener("scroll", updateNavbarColor);
-
-    return function cleanup() {
-      window.removeEventListener("scroll", updateNavbarColor);
-    };
-  });
-
   return (
     <Navbar
-      className={classnames("fixed-top", navbarColor)}
+      className="fixed-top navbar-transparent"
       color-on-scroll="300"
       expand="lg"
     >
@@ -54,7 +31,7 @@ function HomeNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            to="/index"
+            to="/"
             target="_blank"
             title="Cars Land"
           >
