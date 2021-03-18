@@ -1,0 +1,6 @@
+{
+  "api" : {
+   "invokeUrl" : "http://localhost:5000",
+    "auth_key" : "VK2GxhCZ9KeP1viVpHcG"
+  }
+}

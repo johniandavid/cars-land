@@ -4,6 +4,7 @@
   "description": "ecommerce website that sells used cars for an affordable price",
   "main": "index.js",
   "scripts": {
+    "start" : "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
