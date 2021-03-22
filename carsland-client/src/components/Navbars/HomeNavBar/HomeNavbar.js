@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom'
 import classnames from "classnames";
 import {
   Collapse,
@@ -14,7 +13,8 @@ import {
 
 import "./HomeNavbar.css"
 
-function HomeNavbar() {
+
+function HomeNavbar(props) {
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
   const toggleNavbarCollapse = () => {
@@ -67,6 +67,7 @@ function HomeNavbar() {
               <NavLink href="/cart" target="_blank" >
                   <i className="nc-icon lg nc-cart-simple" />
                   <p className="d-lg-none"> Cart </p>
+                  { props.counter ?  <Badge pill>{props.counter}</Badge> : <></> }
               </NavLink>
             </NavItem>
             <NavItem>

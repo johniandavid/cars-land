@@ -1,4 +1,6 @@
-
+.cart-card {
+    background-color: #FFFFFF !important;
+}
 .product-title {
     margin: 14px 25px 0px 12px;
 }

@@ -1,7 +1,5 @@
 import addCarToCart from "../../actions/"
-
 import { Link } from 'react-router-dom'
-import {useDispatch} from "react-redux";
 
 import Slider from 'react-slick';
 import {Card, CardImg, CardBody, CardTitle, Button } from 'reactstrap';
@@ -9,10 +7,18 @@ import {Card, CardImg, CardBody, CardTitle, Button } from 'reactstrap';
 import "./ProductSlide.css";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import {useDispatch} from "react-redux";
 
 function ProductSlide(props) {
 
     const dispatch = useDispatch()
+
+    function handleOnClick(car) {
+        const cart = JSON.parse(window.localStorage.getItem("cart"));
+        cart[`${car["carid"]}`] = car
+        window.localStorage.setItem("cart", JSON.stringify(cart))
+        window.localStorage.setItem("counter", parseInt(window.localStorage.getItem("counter")) + 1 )
+    }
 
     const settings = {
         dots: true,
@@ -33,8 +39,8 @@ function ProductSlide(props) {
                                 <Link target="_blank" to={`/cars/${car.carid}`}>
                                     <CardImg top src={`images/${car.image}`}></CardImg>
                                 </Link>
-                                <div className="add-cart-btn overlay">
-                                    <Button className="btn-black btn-round" onClick={() => dispatch(addCarToCart(car))}>Add to Cart</Button>
+                                <div className="add-cart-btn center">
+                                    <Button className="btn-black btn-round" onClick={() => dispatch(addCarToCart(car)) }>Add to Cart</Button>
                                 </div>
                             </div>
                             <div className="product-title">

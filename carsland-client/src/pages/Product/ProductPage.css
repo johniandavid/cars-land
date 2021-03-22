@@ -1,4 +1,33 @@
-.product-page {
-    height: 100%;
+.main {
+    overflow: hidden;
+    position: relative;
+    height: auto;
     width: 100%;
+    max-width: 700px;
 }
+
+.overlay {
+    color: #bfbebd;
+    display: block;
+    opacity: 100;
+    position: absolute;
+    top: 92%;
+    left: 49%;
+    text-align: center;
+}
+
+.details-btn:hover {
+     color: #000000;
+}
+
+.details-btn {
+    margin-top: 5px;
+}
+.product-description {
+    background-color: #F8F8F8;
+    height: 200px;
+}
+
+
+
+
