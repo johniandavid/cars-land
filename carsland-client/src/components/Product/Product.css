@@ -1,22 +1,3 @@
-.product-card {
-    margin: 50px;
-    background-color: #F8F8F8;
-    height: 500px;
-    width: 60%;
-    border-radius: 4px 4px 4px 4px ;
-
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
-.cover-img-card {
-
-}
-
-
-.detail-card {
-    width: 30%;
-    height: 1000px;
+.add-to-cart-btn {
+    padding-top: 50px;
 }

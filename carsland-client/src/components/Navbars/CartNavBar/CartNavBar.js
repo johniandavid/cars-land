@@ -29,7 +29,6 @@ function CartNavbar() {
           <NavbarBrand
             data-placement="bottom"
             href="/"
-            target="_blank"
             title="Cars Land"
           >
             Cars | Land
@@ -60,7 +59,7 @@ function CartNavbar() {
                 </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="" >
+              <NavLink to="/" target="_blank">
                   <i className="nc-icon lg nc-shop" />
                   <p className="d-lg-none"> Home</p>
               </NavLink>

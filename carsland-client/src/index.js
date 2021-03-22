@@ -1,25 +1,21 @@
 import App from './App';
+import configureStore, { history } from './store';
 
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom'
-import {createStore} from "redux";
-import rootReducer from "./reducers";
+import {Provider} from 'react-redux';
 
 import './assets/css/bootstrap.min.css';
 import './assets/css/paper-kit.css';
-import {Provider} from "react-redux";
 
-
-const redux = createStore (
-    rootReducer,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-)
+const store = configureStore(history)
 
 ReactDOM.render(
-    <BrowserRouter>
-        <Provider store={redux}>
-            <App />
-        </Provider>
-    </BrowserRouter>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <App history={history}/>
+    </Provider>
+,document.getElementById('root')
 );
+
+
+
+

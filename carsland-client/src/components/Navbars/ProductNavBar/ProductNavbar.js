@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import classnames from "classnames";
 import {
-  Collapse,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
+    Collapse,
+    NavbarBrand,
+    Navbar,
+    NavItem,
+    NavLink,
+    Nav,
+    Container, Badge,
 } from "reactstrap";
 
-function ProductNavbar() {
+function ProductNavbar(props) {
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
   const toggleNavbarCollapse = () => {
@@ -20,7 +20,7 @@ function ProductNavbar() {
 
   return (
     <Navbar
-      className="navbar"
+      className="fixed-top navbar"
       color-on-scroll="300"
       expand="lg"
     >
@@ -29,7 +29,6 @@ function ProductNavbar() {
           <NavbarBrand
             data-placement="bottom"
             href="/"
-            target="_blank"
             title="Cars Land"
           >
             Cars | Land
@@ -60,9 +59,10 @@ function ProductNavbar() {
                 </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="" >
+              <NavLink href="/cart" target="_blank">
                   <i className="nc-icon lg nc-cart-simple" />
                   <p className="d-lg-none"> Cart</p>
+                  { props.counter !== 0 && <Badge pill>{props.counter}</Badge> }
               </NavLink>
             </NavItem>
             <NavItem>

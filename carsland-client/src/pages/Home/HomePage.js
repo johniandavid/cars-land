@@ -6,14 +6,19 @@ import About from "../../components/About/About";
 
 import {getAllCars} from "../../data/dataRequests";
 
-import React, {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
+import {useSelector} from "react-redux";
 import ReactFullpage from '@fullpage/react-fullpage';
+import { Container, Row, Col} from "reactstrap";
 
 
 import './HomePage.css';
 
 
 function HomePage() {
+
+    const cart = useSelector(state => state.cart.cars)
+    const count = useSelector(state => state.cart.counter)
 
     const [cars, setCars] = useState([]);
 
@@ -36,7 +41,8 @@ function HomePage() {
                 slidesNavigation={true}
                 scrollOverflow={true}
                 scrollingSpeed={600}
-                sectionsColor={["#000000", "#ffffff", "#ffffff"]}
+                controlArrows={false}
+                sectionsColor={["#ffffff", "#ffffff", "#ffffff"]}
                 lazyLoading={true}
 
                 render={({ state, fullpageApi }) => {
@@ -44,15 +50,22 @@ function HomePage() {
                     return (
                             <ReactFullpage.Wrapper>
                                 <div className="section" data-anchor="home">
-                                    <HomeNavbar/>
+                                    <HomeNavbar counter={count} />
                                     <HeaderWithVideo fullpage={fullpageApi}/>
                                 </div>
                                 <div className="section text-center" data-anchor="about">
-                                    <About />
+                                    <Container fluid={true}>
+                                        <About />
+                                    </Container>
                                 </div>
                                 <div className="section" data-anchor="shop">
-                                    <ProductSlide carsList={cars}/>
-                                    <Footer/>
+                                    <Container fluid={true}>
+                                        <div className="shop-title">
+                                            <h3>Shop</h3>
+                                        </div>
+                                        <ProductSlide carsList={cars}/>
+                                        <Footer/>
+                                    </Container>
                                 </div>
                             </ReactFullpage.Wrapper>
                         )
