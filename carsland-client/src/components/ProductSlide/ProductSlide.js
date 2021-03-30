@@ -2,7 +2,7 @@ import { addCarToCart, deleteFromCart } from "../../actions/"
 
 
 import Slider from 'react-slick';
-import {Card, CardImg, CardBody, CardTitle, Button, Container, Col } from 'reactstrap';
+import {Card, CardImg, CardBody, CardTitle, Button, Container, Row } from 'reactstrap';
 import {useHistory} from 'react-router-dom'
 import {useDispatch} from "react-redux";
 
@@ -33,7 +33,7 @@ function ProductSlide(props) {
 
     let carCards = props.carsList[0].map(car => {
         return (
-            <Col>
+            <Row>
                 <Card className="text-center">
                     <CardBody>
                         <div className="product-image">
@@ -49,7 +49,7 @@ function ProductSlide(props) {
                         </div>
                     </CardBody>
                 </Card>
-            </Col>
+            </Row>
             )
     });
 
