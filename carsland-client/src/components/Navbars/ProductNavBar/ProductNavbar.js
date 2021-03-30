@@ -1,22 +1,32 @@
 import React, { useEffect } from 'react';
+import {Link, useHistory} from 'react-router-dom'
 import classnames from "classnames";
 import {
-    Collapse,
-    NavbarBrand,
-    Navbar,
-    NavItem,
-    NavLink,
-    Nav,
-    Container, Badge,
+  Collapse,
+  Badge,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container,
 } from "reactstrap";
 
-function ProductNavbar(props) {
-  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+import "./ProductNavbar.css"
 
-  const toggleNavbarCollapse = () => {
+function ProductNavBar(props) {
+    const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+
+    const history = useHistory();
+
+    function handleClick(route) {
+        history.push(`/${route}`);
+    }
+
+    const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
     document.documentElement.classList.toggle("nav-open");
-  };
+    };
 
   return (
     <Navbar
@@ -27,9 +37,10 @@ function ProductNavbar(props) {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand
+            className="product-nav-brand"
             data-placement="bottom"
-            href="/"
-            title="Cars Land"
+            onClick={() => handleClick("")}
+            title="CarsPage Land"
           >
             Cars | Land
           </NavbarBrand>
@@ -51,19 +62,18 @@ function ProductNavbar(props) {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
-                <NavLink to="" >
-                    <p className="d-lg-none">
-                        <i className="nc-icon nc-layout-11" /> Cars
-                    </p>
-                </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/cart" target="_blank">
-                  <i className="nc-icon lg nc-cart-simple" />
-                  <p className="d-lg-none"> Cart</p>
-                  { props.counter !== 0 && <Badge pill>{props.counter}</Badge> }
+            <NavItem className="product-nav">
+              <NavLink to="/cart" onClick={() => handleClick("cart")}>
+                  <i className="nc-icon lg nc-cart-simple nav-icon" />
+                  <p className="d-lg-none"> Cart </p>
+                  { props.counter ?  <Badge pill>{props.counter}</Badge> : <></> }
               </NavLink>
+            </NavItem>
+            <NavItem className="product-nav">
+                <NavLink  onClick={() => handleClick("cars")}>
+                    <i className="nc-icon lg nc-layout-11 nav-icon" />
+                    <p className="d-lg-none"> Cars </p>
+                </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
@@ -83,4 +93,4 @@ function ProductNavbar(props) {
   );
 }
 
-export default ProductNavbar;
+export default ProductNavBar;

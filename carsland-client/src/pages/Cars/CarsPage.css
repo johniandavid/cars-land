@@ -1,0 +1,23 @@
+
+.cars-page {
+    height : 100%;
+}
+
+.listings-container {
+    margin-bottom: 50px;
+    min-height: 500px;
+}
+
+.spinner {
+    min-height: 550px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.cars-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}

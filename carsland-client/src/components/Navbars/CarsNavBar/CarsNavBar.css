@@ -1,0 +1,17 @@
+.product-nav-brand:hover {
+    color: #000000 !important;
+}
+
+@media only screen and (min-width: 991px) {
+    .cart-nav {
+        padding-top: 20px
+    }
+}
+
+.cart-icon {
+   color: #7e7a76;
+}
+
+.cart-icon:hover {
+    color: #000000;
+}

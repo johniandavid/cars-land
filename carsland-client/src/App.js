@@ -1,24 +1,20 @@
 import HomePage from "./pages/Home/HomePage";
 import ProductPage from "./pages/Product/ProductPage";
 import CartPage from "./pages/Cart/CartPage";
+import CarsPage from "./pages/Cars/CarsPage";
 
-import {Route, Switch} from "react-router-dom";
-import { ConnectedRouter } from 'connected-react-router'
+import {Route, Switch} from "react-router";
 
 import './App.css';
 
-
-function App({history}) {
-
+function App() {
     return (
-      <ConnectedRouter history={history}>
         <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/cars/:id" component={ProductPage} />
-            <Route path="/cart" component={CartPage} />
+            <Route exact path="/" component={HomePage}/>
+            <Route path="/cart" component={CartPage}/>
+            <Route path="/cars/:id" component={ProductPage}/>
+            <Route path="/cars" component={CarsPage} />
         </Switch>
-      </ConnectedRouter>
-    )
+)
 }
-
 export default App;

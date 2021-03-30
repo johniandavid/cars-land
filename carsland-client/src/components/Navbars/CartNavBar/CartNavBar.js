@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
+import {useHistory} from 'react-router-dom'
 import classnames from "classnames";
 import {
   Collapse,
+  Badge,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -10,13 +12,21 @@ import {
   Container,
 } from "reactstrap";
 
-function CartNavbar() {
-  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+import "./CartNavBar.css"
 
-  const toggleNavbarCollapse = () => {
-    setNavbarCollapse(!navbarCollapse);
-    document.documentElement.classList.toggle("nav-open");
-  };
+
+function CartNavbar(props) {
+    const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+    const history = useHistory();
+
+    function handleClick(route) {
+        history.push(`/${route}`);
+    }
+
+    const toggleNavbarCollapse = () => {
+        setNavbarCollapse(!navbarCollapse);
+        document.documentElement.classList.toggle("nav-open");
+    };
 
   return (
     <Navbar
@@ -27,9 +37,10 @@ function CartNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand
+            className="cart-nav-brand"
+            onClick={() => handleClick("")}
             data-placement="bottom"
-            href="/"
-            title="Cars Land"
+            title="CarsPage Land"
           >
             Cars | Land
           </NavbarBrand>
@@ -51,25 +62,20 @@ function CartNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
-                <NavLink to="" >
-                    <p className="d-lg-none">
-                        <i className="nc-icon nc-layout-11" /> Cars
-                    </p>
+            <NavItem className="cart-nav">
+              <NavLink onClick={() => handleClick("")}>
+                  <i className="nc-icon lg nc-shop nav-icon" />
+                  <p className="d-lg-none"> Home </p>
+              </NavLink>
+            </NavItem>
+            <NavItem className="cart-nav">
+                <NavLink onClick={() => handleClick('cars')}>
+                    <i className="nc-icon lg nc-layout-11 nav-icon"/>
+                    <p className="d-lg-none"> Cars </p>
                 </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/" target="_blank">
-                  <i className="nc-icon lg nc-shop" />
-                  <p className="d-lg-none"> Home</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="/"
-                target="_blank"
-              >
+              <NavLink>
                 <p className="d-lg-none">
                     <i className="nc-icon nc-support-17" /> Support
                 </p>
@@ -79,7 +85,7 @@ function CartNavbar() {
         </Collapse>
       </Container>
     </Navbar>
-  )
+  );
 }
 
 export default CartNavbar;

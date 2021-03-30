@@ -14,10 +14,9 @@ function ProductPage(props) {
 
     let { id } = useParams();
     const [cars, setCars] = useState({});
-    const cart = useSelector(state => state.cart.cars)
-    const count = useSelector(state => state.cart.counter)
 
-    console.log(props.cart)
+    const cart = useSelector(state => state.cart.cars)
+    const counter = useSelector(state => state.cart.counter)
 
     async function fetchData(id) {
         const data = await getCar(id);
@@ -29,7 +28,6 @@ function ProductPage(props) {
 
     return (
             <ReactFullpage
-                anchors={['home', 'about', 'shop','footer']}
                 navigation={false}
                 scrollBar={false}
                 keyboardScrolling={true}
@@ -47,7 +45,7 @@ function ProductPage(props) {
                     return (
                             <ReactFullpage.Wrapper>
                                 <div className="section">
-                                    <ProductNavbar counter={count}/>
+                                    <ProductNavbar counter={counter}/>
                                     <Row lg="12">
                                         <Container fluid={true}>
                                             <img className="main" src={`../images/${cars.image}`}></img>
@@ -61,7 +59,7 @@ function ProductPage(props) {
                                     </Row>
                                 </div>
                                 <div className="section text-center">
-                                    <Product car={cars}/>
+                                    <Product car={cars} />
                                 </div>
                             </ReactFullpage.Wrapper>
                         )

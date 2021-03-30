@@ -4,28 +4,41 @@ import Footer from "../../components/Footers/Footer";
 import ProductSlide from "../../components/ProductSlide/ProductSlide";
 import About from "../../components/About/About";
 
-import {getAllCars} from "../../data/dataRequests";
+import {getCars} from "../../data/dataRequests";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
-import ReactFullpage from '@fullpage/react-fullpage';
-import { Container, Row, Col} from "reactstrap";
+import {useHistory} from "react-router";
 
+import ReactFullpage from '@fullpage/react-fullpage';
+import { Container, Row, Col, Button} from "reactstrap";
 
 import './HomePage.css';
 
 
-function HomePage() {
+function HomePage(props) {
+
+    const [cars, setCars] = useState({0:[]});
+    const [loading, setLoading] = useState(false);
 
     const cart = useSelector(state => state.cart.cars)
-    const count = useSelector(state => state.cart.counter)
-
-    const [cars, setCars] = useState([]);
+    const counter = useSelector(state => state.cart.counter)
+    const history = useHistory();
 
     async function fetchData() {
-        const car =  await getAllCars();
-        setCars(car);
+        setLoading(true)
+        const car =  await getCars({limit: 5});
+        setCars(car)
+
+        if(cars.length != 0) {
+            setLoading(false)
+        }
     }
+
+    function handleOnClick(route) {
+        history.push(`/${route}`)
+    }
+
     useEffect(() => {
         fetchData()
     }, []);
@@ -43,14 +56,13 @@ function HomePage() {
                 scrollingSpeed={600}
                 controlArrows={false}
                 sectionsColor={["#ffffff", "#ffffff", "#ffffff"]}
-                lazyLoading={true}
 
                 render={({ state, fullpageApi }) => {
 
                     return (
                             <ReactFullpage.Wrapper>
                                 <div className="section" data-anchor="home">
-                                    <HomeNavbar counter={count} />
+                                    <HomeNavbar counter={counter} />
                                     <HeaderWithVideo fullpage={fullpageApi}/>
                                 </div>
                                 <div className="section text-center" data-anchor="about">
@@ -60,12 +72,15 @@ function HomePage() {
                                 </div>
                                 <div className="section" data-anchor="shop">
                                     <Container fluid={true}>
-                                        <div className="shop-title">
-                                            <h3>Shop</h3>
+                                        <div className="section-title">
+                                             <h4>Shop</h4>
                                         </div>
-                                        <ProductSlide carsList={cars}/>
-                                        <Footer/>
+                                        <ProductSlide carsList={cars} />
+                                        <div className="view-more-btn-container">
+                                            <Button className="btn-round view-more-btn" size="lg" onClick={() => handleOnClick('cars')}pill> View More</Button>
+                                        </div>
                                     </Container>
+                                     <Footer/>
                                 </div>
                             </ReactFullpage.Wrapper>
                         )

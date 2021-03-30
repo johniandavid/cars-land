@@ -1,16 +1,15 @@
 import CartNavbar from "../../components/Navbars/CartNavBar/CartNavBar";
 import ProductList from "../../components/ProductList/ProductList";
 import Footer from "../../components/Footers/Footer";
-import {useSelector} from "react-redux";
 
 import {Container, Row, Col, Button} from "reactstrap";
-
+import {useSelector} from "react-redux";
 import "./CartPage.css"
 
 function CartPage(props) {
 
     const cart = useSelector(state => state.cart.cars)
-    const count = useSelector(state => state.cart.counter)
+    const counter = useSelector(state => state.cart.counter)
 
     function getCartTotal(cart) {
         let total = 0
@@ -27,7 +26,7 @@ function CartPage(props) {
                 <Row lg="2">
                     <Col md="8"lg="6">
                         <Container className="cart">
-                            {count ? <ProductList shoppingCart={cart} /> : <div className="text-middle"><h6>Your Cart is Empty</h6></div>}
+                            { counter ? <ProductList /> : <div className="text-middle"><h6>Your Cart is Empty</h6></div>}
                         </Container>
                     </Col>
                     <Col className="total" md="4" lg="6">
@@ -37,10 +36,10 @@ function CartPage(props) {
                          <Container>
                             <Row className="text-center">
                                 <Col xs="6" g="6">
-                                    <h6>Price:</h6>
+                                    <h5>Price:</h5>
                                 </Col>
                                 <Col xs="6"lg="6">
-                                    <h6>$ {getCartTotal(cart)}</h6>
+                                    <h5>$ {getCartTotal(cart)}</h5>
                                 </Col>
                             </Row>
                         </Container>
