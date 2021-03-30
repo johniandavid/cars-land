@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ed26489-f8d8-4ed1-b630-739a26b63174" name="Default Changelist" comment="Added Search Feature and Cars Page">
+      <change afterPath="$PROJECT_DIR$/.idea/cars-land.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/sql.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/data/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland-client/src/components/ProductSlide/ProductSlide.js" beforeDir="false" afterPath="$PROJECT_DIR$/carsland-client/src/components/ProductSlide/ProductSlide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsland-client/src/pages/Home/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/carsland-client/src/pages/Home/HomePage.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qSgW76JUpBwOtG3uXKccVVPUVq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ed26489-f8d8-4ed1-b630-739a26b63174" name="Default Changelist" comment="" />
+      <created>1617078433672</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617078433672</updated>
+      <workItem from="1617078446122" duration="1068000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added Search Feature and Cars Page">
+      <created>1617078613256</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617078613256</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Search Feature and Cars Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Search Feature and Cars Page" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="303" y="52" key="CommitChangelistDialog2" timestamp="1617078612247">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1617078612247" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1617078618023">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1617078618023" />
+  </component>
+</project>

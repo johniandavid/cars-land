@@ -33,7 +33,7 @@ function ProductSlide(props) {
 
     let carCards = props.carsList[0].map(car => {
         return (
-            <Container>
+            <Col>
                 <Card className="text-center">
                     <CardBody>
                         <div className="product-image">
@@ -49,7 +49,7 @@ function ProductSlide(props) {
                         </div>
                     </CardBody>
                 </Card>
-            </Container>
+            </Col>
             )
     });
 

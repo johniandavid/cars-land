@@ -1,0 +1,16 @@
+{
+  "server" : {
+    "port": 5000
+  },
+  "database" : {
+    "user" : "postgres",
+    "password" : "",
+    "database" : "cars_land",
+    "host" : "localhost",
+    "port" : "5432"
+  },
+  "api" : {
+    "invokeUrl" : "http://localhost:5000",
+    "api_key" : "VK2GxhCZ9KeP1viVpHcG"
+  }
+}

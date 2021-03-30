@@ -1,0 +1,212 @@
+{
+  "modelids": {
+    "2008 Nissan Altima S" : "29b30d49-45a9-487a-97fa-e98eb3a4d98b",
+    "2010 BMW 329 I" : "08d07538-04d7-4ae7-b404-f98cdb326c7c",
+    "2018 Mazda CX-9 Touring" : "7f81b5f6-fd11-43f4-a879-4a68f2fb6a40",
+    "2012 Honda CR-V EX-L" : "e77e0526-eb11-4c2a-89a7-4aba4d7c6b26",
+    "2017 Jeep Compass Sport ": "12dc3cf9-6ba1-4a3b-a1db-98ce4f59b259",
+    "2013 Hyundai Elantra GLS" : "e10d770b-29b0-42f9-9982-a6771b5a85ce",
+    "2012 Volvo S60 T5" : "f67589dd-a122-4f7a-a679-196cc4a9a5e4",
+    "2018 Toyota Yaris IA" : "9e691147-4e07-4574-a5d8-a4cd81d9de4e",
+    "2015 Acura TLX" : "d2713e5a-b4f1-4625-87c7-3cabe40686cb",
+    "2009 Chevrolet Corvette" : "c298ef23-55cb-44eb-9cb3-d0aad032312b",
+    "2012 Dodge Challenger SRT-8" : "8e6ef157-595e-4df7-8626-9d7c0cddf5b8",
+    "2014 Ford Explorer Sport" : "b3c7a7bb-febf-4d7d-a1f5-1982d2c65464"
+  },
+  "models": [
+    {
+      "year" : "2008",
+      "make" : "Nissan",
+      "model" : "Altima S",
+      "image": "altima.jpg",
+      "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+      "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2010",
+        "make" : "Bmw",
+        "model" : "328 I",
+        "image": "bmw.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2018",
+        "make" : "Mazda",
+        "model" : "CX-9 Touring",
+        "image": "touring.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2012",
+        "make" : "Honda",
+        "model" : "CR-V EX-L",
+        "image": "CRV.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2017",
+        "make" : "Jeep",
+        "model" : "Compass Sport",
+        "image": "jeep.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2013",
+        "make" : "Hyundai",
+        "model" : "Elantra GLS",
+        "image": "Elantra.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2012",
+        "make" : "Volvo",
+        "model" : "S60 T5",
+        "image": "volvo.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2018",
+        "make" : "Toyota",
+        "model" : "Yaris IA",
+        "image": "yaris.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2015",
+        "make" : "Acura",
+        "model" : "TLX",
+        "image": "tlx.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2009",
+        "make" : "Chevrolet",
+        "model" : "Corvette",
+        "image": "corvette.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2012",
+        "make" : "Dodge",
+        "model" : "Challenger SRT-8",
+        "image": "challenger.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    },
+    {
+        "year" : "2014",
+        "make" : "Ford",
+        "model" : "Explorer Sport",
+        "image": "explorer.jpg",
+        "features" : "Cruise Control, Auxiliary Audio Input, Alloy Wheels, Overhead Airbags, Side Airbags, Air Conditioning",
+        "specifications" : "23/31 mpg, Black/Black, Automatic, 2WD, 2.5L, 4, 170 hp@5600rpm, 175 torque@3900rpm"
+    }
+  ],
+  "cars": [
+    {
+      "color" : "Black",
+      "price" : "11000",
+      "mileage" : "70000",
+      "image1" : "altima1.jpg",
+      "image2" : "altima2.jpg",
+      "image3" : "altima3.jpg"
+    },
+    {
+      "color" : "Gray",
+      "price" : "13000",
+      "mileage" : "74000",
+      "image1" : "bmw1.jpg",
+      "image2" : "bmw2.jpg",
+      "image3" : "bmw3.jpg"
+    },
+    {
+      "color" : "Navy Blue",
+      "price" : "22000",
+      "mileage" : "50000",
+      "image1" : "touring1.jpg",
+      "image2" : "touring2.jpg",
+      "image3" : "touring3.jpg"
+    },
+    {
+      "color" : "Gray",
+      "price" : "14000",
+      "mileage" : "102000",
+      "image1" : "CRV1.jpg",
+      "image2" : "CRV2.jpg",
+      "image3" : "CRV3.jpg"
+    },
+    {
+      "color" : "Black",
+      "price" : "14000",
+      "mileage" : "55000",
+      "image1" : "jeep1.jpg",
+      "image2" : "jeep2.jpg",
+      "image3" : "jeep3.jpg"
+    },
+    {
+      "color" : "Red",
+      "price" : "11000",
+      "mileage" : "85000",
+      "image1" : "Elantra.1.jpg",
+      "image2" : "Elantra.2.jpg",
+      "image3" : "Elantra.3.jpg"
+    },
+    {
+      "color" : "Black",
+      "price" : "11000",
+      "mileage" : "85000",
+      "image1" : "volvo1.jpg",
+      "image2" : "volvo2.jpg",
+      "image3" : "volvo3.jpg"
+    },
+    {
+      "color" : "Red",
+      "price" : "14000",
+      "mileage" : "32000",
+      "image1" : "yaris1.jpg",
+      "image2" : "yaris2.jpg",
+      "image3" : "yaris3.jpg"
+    },
+    {
+      "color" : "Gray",
+      "price" : "17000",
+      "mileage" : "95000",
+      "image1" : "tlx1.jpg",
+      "image2" : "tlx2.jpg",
+      "image3" : "tlx3.jpg"
+    },
+    {
+      "color" : "White",
+      "price" : "11000",
+      "mileage" : "73000",
+      "image1" : "corvette1.jpg",
+      "image2" : "corvette2.jpg",
+      "image3" : "corvette3.jpg"
+    },
+    {
+      "color" : "Gray",
+      "price" : "24000",
+      "mileage" : "88000",
+      "image1" : "challenger1.jpg",
+      "image2" : "challenger2.jpg",
+      "image3" : "challenger3.jpg"
+    },
+    {
+      "color" : "White",
+      "price" : "20000",
+      "mileage" : "98000",
+      "image1" : "explorer1.jpg",
+      "image2": "explorer2.jpg",
+      "image3": "explorer3.jpg"
+    }
+  ]
+}

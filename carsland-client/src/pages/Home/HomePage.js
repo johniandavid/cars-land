@@ -72,13 +72,13 @@ function HomePage(props) {
                                 </div>
                                 <div className="section" data-anchor="shop">
                                     <Container fluid={true}>
-                                        <div className="section-title">
+                                        <Row className="section-title">
                                              <h4>Shop</h4>
-                                        </div>
+                                        </Row>
                                         <ProductSlide carsList={cars} />
-                                        <div className="view-more-btn-container">
+                                        <Row className="view-more-btn-container">
                                             <Button className="btn-round view-more-btn" size="lg" onClick={() => handleOnClick('cars')}pill> View More</Button>
-                                        </div>
+                                        </Row>
                                     </Container>
                                      <Footer/>
                                 </div>
