@@ -29,9 +29,9 @@ function SideMenu(props) {
     const [maxMileage, setMaxMileage] = useState(150)
 
 
-   function openMenu() {
+   function openMenu(width) {
         document.getElementById("query-input").style.display = "block";
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.width = `${width}`;
     }
     function closeMenu() {
         document.getElementById("query-input").style.display = "none";
@@ -165,20 +165,20 @@ function SideMenu(props) {
                                     valueLabelDisplay="auto"
                                     aria-labelledby="range-slider"
                                     marks={mileageMarks}
-                                    step={10}
+                                    step={5}
                                     min={0}
                                     max={150}
                                 />
                             </Container>
                         </FormGroup>
                         <div className="search-btn-container">
-                            <Button className="search-btn btn-round" onClick={handleOnClickSearch}>Search</Button>
+                            <Button className="search-btn btn-round" onClick={handleOnClickSearch}>Apply Filters</Button>
                         </div>
                     </Container>
                 </div>
             </div>
-            <div className="open-btn-container" id="right">
-                <Button onClick={openMenu} ><i className="nc-icon lg nc-minimal-right"></i></Button>
+            <div className="open-btn-container">
+                 <Button className="open-btn" onClick={() => openMenu('250px')} ><i className="nc-icon lg nc-zoom-split"></i></Button>
             </div>
         </>
     )

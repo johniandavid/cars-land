@@ -23,33 +23,30 @@ function CartPage(props) {
         <div className="cart-page">
             <CartNavbar />
             <Container>
-                <Row lg="2">
-                    <Col md="8"lg="6">
+                <Row lg={2}>
+                    <Col md={8} lg={6}>
                         <Container className="cart">
                             { counter ? <ProductList /> : <div className="text-middle"><h6>Your Cart is Empty</h6></div>}
                         </Container>
                     </Col>
-                    <Col className="total" md="4" lg="6">
-                        <div className="text-center price-title">
+                    <Col className="total-container">
+                        <Row className="align-center">
                             <h4>Total</h4>
-                        </div>
-                         <Container>
-                            <Row className="text-center">
-                                <Col xs="6" g="6">
-                                    <h5>Price:</h5>
-                                </Col>
-                                <Col xs="6"lg="6">
-                                    <h5>$ {getCartTotal(cart)}</h5>
-                                </Col>
-                            </Row>
-                        </Container>
-                        <Container className="order-btn text-center">
+                        </Row>
+                        <Row className="total-container-margin">
+                            <Col className="align-center">
+                                <h5>Total:</h5>
+                            </Col>
+                            <Col className="align-center">
+                                <h5>$ {getCartTotal(cart)}</h5>
+                            </Col>
+                        </Row>
+                        <Row className="total-container-margin align-center">
                             <Button className="btn-black btn-round">Checkout</Button>
-                        </Container>
+                        </Row>
                     </Col>
                 </Row>
             </Container>
-            <Footer/>
         </div>
     )
 }

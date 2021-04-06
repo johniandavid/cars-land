@@ -48,14 +48,11 @@ function CarsPage() {
             <div className="cars-page">
                 <SideMenu handleSetLoading={setLoading} handleSetPages={handlePages}/>
                 <Container>
-                    {!loading ? <Row className="listings-container"><CarsList page={pages} current={currentPage} /></Row> : <Row className="listings-container spinner"><Spinner animation="border" variant="primary" /></Row>}
+                    {!loading ? <Row className="listings-container"><CarsList page={pages} current={currentPage} /></Row> : <Row className="listings-container spinner"><Spinner animation="border" variant="default" /></Row>}
                 </Container>
                 <div className="cars-pagination">
                     {Object.values(pages).length > 1 && !loading ? <CarPagination pageNums={Object.values(pages).length} handlePage={handleOnClick}/> : <></>}
                 </div>
-            </div>
-            <div>
-
             </div>
         </>
     )

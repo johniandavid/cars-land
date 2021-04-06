@@ -34,16 +34,16 @@ function ProductSlide(props) {
     let carCards = props.carsList[0].map(car => {
         return (
             <Row>
-                <Card className="text-center">
+                <Card className="text-center" onDoubleClick={() => handleClick(`cars/${car.carid}`)}>
                     <CardBody>
                         <div className="product-image">
-                            <CardImg top src={`images/${car.image}`} onClick={() => handleClick(`cars/${car.carid}`)}></CardImg>
+                            <CardImg top src={`images/${car.image}`} ></CardImg>
                             <div className="add-cart-btn center">
-                                <Button className="btn-black btn-round"  onClick={() => dispatch(addCarToCart(car))}>Add to Cart</Button>
+                                <Button className="btn-black btn-round" onClick={() => dispatch(addCarToCart(car))}>Add to Cart</Button>
                             </div>
                         </div>
                         <div className="product-title">
-                            <div  onClick={() => handleClick(`cars/${car.carid}`)}>
+                            <div>
                                 <CardTitle>{`${car.year} ${car.make} ${car.model}`}</CardTitle>
                             </div>
                         </div>

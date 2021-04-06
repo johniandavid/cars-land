@@ -40,7 +40,7 @@ function ProductNavBar(props) {
             className="product-nav-brand"
             data-placement="bottom"
             onClick={() => handleClick("")}
-            title="CarsPage Land"
+            title="Cars Land"
           >
             Cars | Land
           </NavbarBrand>

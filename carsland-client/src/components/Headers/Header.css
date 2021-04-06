@@ -1,0 +1,14 @@
+.header-container {
+    color: #FFFFFF;
+    justify-content: center;
+    margin: 200px;
+}
+
+.move-down-btn:hover {
+    color: #FFFFFF;
+}
+
+.move-down-btn-container {
+    justify-content: center;
+    color:#D3D3D3;
+}

@@ -15,6 +15,6 @@ function App() {
             <Route path="/cars/:id" component={ProductPage}/>
             <Route path="/cars" component={CarsPage} />
         </Switch>
-)
+    )
 }
 export default App;

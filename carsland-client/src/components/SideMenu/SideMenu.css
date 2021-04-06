@@ -1,10 +1,15 @@
-.MuiSlider-root {
-    color: #66615b !important;
+.open-btn-container {
+    width: 100%;
 }
 
-.MuiSlider-markLabel {
-    font-family: "Montserrat", "Helvetica", Arial, sans-serif !important;
+.open-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50% !important;
+    margin-left: 20px !important;
+    padding-left: 16px !important;
 }
+
 
 .sidenav {
     height: 100%;
@@ -16,6 +21,7 @@
     background-color: #FFFFFF;
     overflow-x: hidden;
     transition: 0.5s;
+    border-right: 1px solid #D3D3D3;
 }
 
 .search-btn-container {
@@ -42,4 +48,16 @@
 
 .inputs > * {
     padding-top: 10px;
+}
+
+.MuiSlider-root {
+    color: #000000 !important;
+}
+
+.MuiSlider-markLabel {
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif !important;
+}
+
+.form-control {
+    border-radius: 30px !important;
 }

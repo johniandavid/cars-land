@@ -1,6 +1,15 @@
 a {
     color: #FFFFFF;
 }
+
+.dark {
+    color: #66615B !important;
+}
+
+.home-nav-brand {
+    color: #FFFFFF !important;
+}
+
 .badge-margin {
     margin: 10px;
 }

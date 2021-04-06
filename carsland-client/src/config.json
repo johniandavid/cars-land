@@ -1,6 +1,6 @@
 {
   "api" : {
-   "invokeUrl" : "http://localhost:5000",
+   "invokeUrl" : "https://cars-land-rest-api.herokuapp.com",
     "auth_key" : "VK2GxhCZ9KeP1viVpHcG"
   }
 }

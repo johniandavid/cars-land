@@ -12,27 +12,29 @@ function ProductList(props) {
     let productCards = cart.map((product,index) => {
         const cartid = index + 1
         return (
-                    <Card className="cart-card text-center">
-                        <Row xs="2">
-                            <Col>
-                                <div className="thumbnail">
-                                    <CardImg src={`images/${product.image}`}></CardImg>
-                                    <div className="middle">
-                                        <Button className="btn-round" size="sm" color="danger" onClick={() => dispatch(deleteFromCart(cartid-1))}>Delete</Button>
+                    <Card className="cart-card">
+                        <Container>
+                            <Row>
+                                <Col xs={2} sm={2} lg={2}>
+                                    <div className="thumbnail">
+                                        <CardImg src={`images/${product.image}`}></CardImg>
+                                        <div className="middle">
+                                            <Button className="btn-round" size="sm" color="danger" onClick={() => dispatch(deleteFromCart(cartid-1))}>Delete</Button>
+                                        </div>
                                     </div>
-                                </div>
-                            </Col>
-                            <Col>
-                                <a href={product.url} target="_blank">
+                                </Col>
+                                <Col xs={8} sm={8} lg={8} className="product-details">
                                     <div className="product-title">
-                                        <h6 >{`${product.year} ${product.make} ${product.model}`}</h6>
+                                        <h6>{`${product.year} ${product.make} ${product.model}`}</h6>
                                     </div>
+                                </Col>
+                                <Col xs={2} sm={2} lg={2} className="product-details">
                                     <div className="product-price">
-                                        <CardBody>${product.price}</CardBody>
+                                        <h6>${product.price}</h6>
                                     </div>
-                                </a>
-                            </Col>
-                        </Row>
+                                </Col>
+                            </Row>
+                        </Container>
                     </Card>
                 );
         });

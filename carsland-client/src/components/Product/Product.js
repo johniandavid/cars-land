@@ -27,7 +27,7 @@ function Product(props) {
                 <div className="slide">
                     <Container>
                         <Row>
-                            <Col  sm={12} md={12} lg={8} xl={8} className="text-left">
+                            <Col sm={12} md={12} lg={8} xl={8} className="car-details">
                                 <h1>{`${props.car.year} ${props.car.make} ${props.car.model}`}</h1>
                                 <h3>{`Price: $ ${props.car.price} | Mileage: ${props.car.mileage}`}</h3>
                                 <div className="add-to-cart-btn-container">

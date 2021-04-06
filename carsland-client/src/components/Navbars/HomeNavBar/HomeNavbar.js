@@ -30,7 +30,7 @@ function HomeNavbar(props) {
 
       return (
         <Navbar
-          className="fixed-top navbar-transparent"
+          className="fixed-top dark navbar-transparent"
           color-on-scroll="300"
           expand="lg"
         >
@@ -39,7 +39,8 @@ function HomeNavbar(props) {
                <NavbarBrand
                 onClick={() => handleClick("")}
                 data-placement="bottom"
-                title="CarsPage Land"
+                title="Cars Land"
+                className="home-nav-brand"
               >
                 Cars | Land
               </NavbarBrand>
@@ -50,9 +51,9 @@ function HomeNavbar(props) {
                 })}
                 onClick={toggleNavbarCollapse}
               >
-                <span className="navbar-toggler-bar bar1" />
-                <span className="navbar-toggler-bar bar2" />
-                <span className="navbar-toggler-bar bar3" />
+                <span className="navbar-toggler-bar bar1 dark" />
+                <span className="navbar-toggler-bar bar2 dark" />
+                <span className="navbar-toggler-bar bar3 dark" />
               </button>
             </div>
             <Collapse
@@ -77,7 +78,7 @@ function HomeNavbar(props) {
                 <NavItem>
                   <NavLink>
                     <p className="d-lg-none">
-                        <i className="nc-icon nc-support-17" /> Support
+                        <i className="nc-icon nc-support-17 dark" /> Support
                     </p>
                   </NavLink>
                 </NavItem>

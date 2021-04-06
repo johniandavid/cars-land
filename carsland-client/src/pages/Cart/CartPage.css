@@ -3,8 +3,17 @@
     overflow: scroll;
 }
 
-.total {
+.total-container {
     min-height: 350px;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+}
+
+.total-container-margin {
+    margin: 30px;
 }
 
 .cart {
@@ -18,14 +27,7 @@
 }
 
 .text-middle {
-    margin: 120px;
-    text-align: center;
-}
-
-.price-title {
-    margin-bottom: 50px;
-}
-
-.order-btn {
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 125px;
 }

@@ -1,12 +1,12 @@
 const constants = require("./constants")
-const pool = require("./database");
+const API_KEY = constants.API_KEY
+const PORT = constants.SERVER_PORT
 
+const pool = require("./database");
 const express = require("express");
 const cors = require('cors');
 
 const app = express();
-const API_KEY = constants.API_KEY
-const PORT = constants.SERVER_PORT
 
 app.use(express.json())
 app.use(cors());
@@ -38,9 +38,8 @@ app.get(`/${API_KEY}/v1/cars`, async (req,res) => {
 
     } catch(err) {
         console.log(err);
-        responseBody = "Error could not get cars"
+        responseBody = err
     }
-
 
     const data = {
         headers: {
@@ -137,14 +136,30 @@ app.get(`/${API_KEY}/v1/cars/search`, async (req,res) => {
 //get all car models
 
 app.get(`/${API_KEY}/v1/models`, async (req,res) => {
-    try{
 
+    var responseBody = ""
+    var count = 0
+
+    try{
         const allModels = await pool.query("SELECT * FROM model");
-        res.json(allModels.rows);
+        responseBody = allModels.rows;
+        count = allModels.rowCount
 
     } catch(err) {
         console.log(err.message)
+        responseBody = "Error: Could not get models"
     }
+
+    const data = {
+        headers : {
+           "content-type" : "application/json",
+            "total-resource-count" : count
+        },
+        statusCode : res.statusCode,
+        body : responseBody
+    }
+
+    res.json(data)
 
 });
 
@@ -190,7 +205,7 @@ app.post(`/${API_KEY}/v1/cars`, async (req,res) => {
     try{
        const { carid, modelid, color, price, mileage, image1, image2, image3 } = req.body;
 
-       const newCar = await pool.query(`INSERT INTO car (carid, modelid, color, price, mileage, image1, image2, image3) 
+       await pool.query(`INSERT INTO car (carid, modelid, color, price, mileage, image1, image2, image3) 
        VALUES('${carid}', '${modelid}','${color}', '${price}', '${mileage}', '${image1}', '${image2}', '${image3}')`);
 
        responseBody = `Car with ${modelid} was created!`
@@ -220,7 +235,7 @@ app.post(`/${API_KEY}/v1/models`, async (req,res) => {
     try{
         const { modelid, year, make, model, image, features, specifications } = req.body;
 
-        const newModel = await pool.query(`INSERT INTO model (modelid, year, make, model, image, features, specifications) 
+        await pool.query(`INSERT INTO model (modelid, year, make, model, image, features, specifications) 
         VALUES('${modelid}','${year}','${make}','${model}','${image}','${features}','${specifications}')`);
 
         responseBody = `Model: ${year} ${make} ${model} was sucessfully created!`
@@ -244,6 +259,8 @@ app.post(`/${API_KEY}/v1/models`, async (req,res) => {
 
 app.put(`/${API_KEY}/v1/cars/:carid/:column`, async (req,res) => {
 
+    var responseBody = ""
+
     try{
         const params = req.params;
         const carid = params['carid'];
@@ -253,13 +270,25 @@ app.put(`/${API_KEY}/v1/cars/:carid/:column`, async (req,res) => {
         console.log(params);
 
         await pool.query(`UPDATE car SET ${column} = '${updatedValue}' WHERE carid = '${carid}'`);
-        const car = await pool.query(`SELECT * FROM car WHERE carid = '${carid}'`);
+        responseBody = `Car with carid: ${carid} was sucessfully updated!`
 
-        res.json(car.rows);
 
     } catch(err) {
         console.log(err.message);
+        responseBody = `Error: Car with carid: ${carid} was not updated!`
     }
+
+     const data = {
+        headers : {
+            "content-type" : "application/json",
+            "updated-column" : column,
+            "updated-value" : updatedValue
+        },
+        body : responseBody
+    }
+
+    res.json(data)
+
 });
 
 
@@ -267,21 +296,34 @@ app.put(`/${API_KEY}/v1/cars/:carid/:column`, async (req,res) => {
 
 app.put(`/${API_KEY}/v1/models/:modelid/:column`, async (req,res) => {
 
+    var responseBody = ""
+
     try{
         const params = req.params;
         const modelid = params['modelid'];
         const column = params['column'];
-        const { columnName } = req.body;
+        const { updatedValue } = req.body;
 
-        await pool.query(`UPDATE model SET ${column} = '${columnName}' WHERE modelid = '${modelid}'`);
+        await pool.query(`UPDATE model SET ${column} = '${updatedValue}' WHERE modelid = '${modelid}'`);
 
-        const model = await pool.query(`SELECT * FROM model WHERE modelid = '${modelid}'`);
-
-        res.json(model.rows);
+        responseBody = `Model with modelid: ${modelid} was sucessfully updated!`
 
     } catch(err) {
         console.log(err.message);
+        responseBody = `Error: Model with modelid: ${modelid} was not updated!`
     }
+
+    const data = {
+        headers : {
+            "content-type" : "application/json",
+            "updated-column" : column,
+            "updated-value" : columnName
+        },
+        body : responseBody
+    }
+
+    res.json(data)
+
 });
 
 
@@ -289,23 +331,37 @@ app.put(`/${API_KEY}/v1/models/:modelid/:column`, async (req,res) => {
 
 app.delete(`/${API_KEY}/v1/cars/:carid`, async (req,res) => {
 
+    var responseBody = "";
+
     try{
         const params = req.params;
         const carid = params['carid'];
 
         await pool.query(`DELETE FROM car WHERE carid = '${carid}'`);
-        const allCar = await pool.query('SELECT * FROM car');
 
-        res.json(allCar.rows);
+        responseBody = `Car with carid: ${carid} was sucessfully deleted!`
 
     } catch(err) {
         console.log(err.message)
+        responseBody = `Error: Car with carid: ${carid} was not deleted!`
     }
+
+    const data = {
+        headers : {
+            "content-type" : "application/json"
+        },
+        body : responseBody
+    }
+
+    res.json(data)
+
 });
 
 //delete a car model
 
 app.delete(`/${API_KEY}/v1/models/:modelid`, async (req,res) => {
+
+    var responseBody = "";
 
     try{
 
@@ -313,13 +369,21 @@ app.delete(`/${API_KEY}/v1/models/:modelid`, async (req,res) => {
         const modelid = params['modelid'];
         await pool.query(`DELETE FROM model WHERE modelid = '${modelid}'`)
 
-        const allCarModels = await pool.query("SELECT * FROM model");
+        responseBody = `Model with modelid: ${modelid} was sucessfully deleted!`
 
-        res.json(allCarModels.rows);
 
     } catch(err) {
         console.log(err.message)
+        responseBody = `Error: Model of modelid: ${modelid} was not deleted!`
     }
+     const data = {
+        headers : {
+            "content-type" : "application/json"
+        },
+        body : responseBody
+    }
+
+    res.json(data)
 });
 
 

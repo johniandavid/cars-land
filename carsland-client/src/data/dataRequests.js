@@ -1,5 +1,5 @@
 import Axios from 'axios'
-import { API_INVOKE_URL, AUTH_TOKEN} from "../constants";
+import { INVOKE_URL, AUTH_TOKEN} from "../constants";
 
 export async function getCars(params) {
 
@@ -9,7 +9,7 @@ export async function getCars(params) {
     params['limit'] !== undefined ? query += `limit=${params['limit']}&` : query += ""
 
     try {
-        var response = await Axios.get(`${API_INVOKE_URL}/${AUTH_TOKEN}/v1/cars?${query}`);
+        var response = await Axios.get(`${INVOKE_URL}/${AUTH_TOKEN}/v1/cars?${query}`);
         var next = response.data.headers['next']
 
         var index = 0
@@ -17,7 +17,7 @@ export async function getCars(params) {
 
         while(next != null){
             index += 1
-            response = await Axios.get(`${API_INVOKE_URL}/${AUTH_TOKEN}/v1/cars?${query}&next=${next}`);
+            response = await Axios.get(`${INVOKE_URL}/${AUTH_TOKEN}/v1/cars?${query}&next=${next}`);
             response.status === 200 ? res[index] = response.data.body : res[index] = []
             next = response.data.headers['next']
         }
@@ -47,7 +47,7 @@ export async function getFilteredCars(params) {
     params['maxMileage'] !== undefined ? query += `maxMileage=${params['maxMileage']}&` : query += ""
 
    try {
-        var response = await Axios.get(`${API_INVOKE_URL}/${AUTH_TOKEN}/v1/cars/search?${query}`);
+        var response = await Axios.get(`${INVOKE_URL}/${AUTH_TOKEN}/v1/cars/search?${query}`);
         var next = response.data.headers['next']
 
         var index = 0
@@ -55,7 +55,7 @@ export async function getFilteredCars(params) {
 
         while(next != null){
             index += 1
-            response = await Axios.get(`${API_INVOKE_URL}/${AUTH_TOKEN}/v1/cars?${query}&next=${next}`);
+            response = await Axios.get(`${INVOKE_URL}/${AUTH_TOKEN}/v1/cars?${query}&next=${next}`);
             response.status === 200 ? res[index] = response.data.body : res[index] = []
             next = response.data.headers['next']
         }
@@ -69,7 +69,7 @@ export async function getFilteredCars(params) {
 
 export async function getCar(id) {
     try {
-        const response = await Axios.get(`${API_INVOKE_URL}/${AUTH_TOKEN}/v1/cars/${id}`);
+        const response = await Axios.get(`${INVOKE_URL}/${AUTH_TOKEN}/v1/cars/${id}`);
         return await response.data.body;
 
     } catch(error) {

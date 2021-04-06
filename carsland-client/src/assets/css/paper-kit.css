@@ -3097,11 +3097,11 @@ License - nucleoapp.com/license/
     padding-top: 25px;
     box-shadow: none; }
     .navbar.navbar-transparent .navbar-brand {
-      color: #FFFFFF; }
+      color: ##66615B; }
     .navbar.navbar-transparent .navbar-nav .nav-item .nav-link {
       color: #FFFFFF; }
     .navbar.navbar-transparent .navbar-toggler .navbar-toggler-bar {
-      background: #FFFFFF !important; }
+      background: #66615B !important; }
   .navbar .logo-container {
     margin-top: 5px; }
     .navbar .logo-container .logo {
@@ -5304,7 +5304,7 @@ License - nucleoapp.com/license/
     overflow-y: visible;
     border-top: none;
     text-align: left;
-    border-left: 1px solid #CCC5B9;
+    border-left: 1px solid #D3D3D3;
     padding-right: 0px;
     padding-left: 40px;
     padding-top: 15px;

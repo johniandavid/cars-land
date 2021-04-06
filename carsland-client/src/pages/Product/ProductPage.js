@@ -43,25 +43,33 @@ function ProductPage(props) {
                 render={({ state, fullpageApi }) => {
 
                     return (
-                            <ReactFullpage.Wrapper>
-                                <div className="section">
-                                    <ProductNavbar counter={counter}/>
-                                    <Row lg="12">
-                                        <Container fluid={true}>
-                                            <img className="main" src={`../images/${cars.image}`}></img>
-                                        </Container>
-                                        <div className="overlay">
-                                            <span>Details</span>
-                                            <div className="details-btn">
-                                                <i className="nc-icon x2 nc-minimal-down" onClick={() => fullpageApi.moveSectionDown()} />
+                        <ReactFullpage.Wrapper>
+                            <div className="section">
+                                <ProductNavbar counter={counter}/>
+                                <Container>
+                                    <Row className="car-img-container">
+                                        <Col>
+                                            <div className="car-img">
+                                                <img className="main" src={`../images/${cars.image}`}></img>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <div className="details-btn-container">
+                                            <div className="text-center">
+                                                <span>Details</span>
+                                                <div className="details-btn">
+                                                    <i className="nc-icon x2 nc-minimal-down" onClick={() => fullpageApi.moveSectionDown()} />
+                                                </div>
                                             </div>
                                         </div>
                                     </Row>
-                                </div>
-                                <div className="section text-center">
-                                    <Product car={cars} />
-                                </div>
-                            </ReactFullpage.Wrapper>
+                                </Container>
+                            </div>
+                            <div className="section text-center">
+                                <Product car={cars} />
+                            </div>
+                        </ReactFullpage.Wrapper>
                         )
                     }
                 }
