@@ -1,1 +1,0 @@
-API_KEY = VK2GxhCZ9KeP1viVpHcG
