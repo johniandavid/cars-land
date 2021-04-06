@@ -1,6 +1,0 @@
-{
-  "api" : {
-   "invokeUrl" : "https://cars-land-rest-api.herokuapp.com",
-    "auth_key" : "VK2GxhCZ9KeP1viVpHcG"
-  }
-}
